@@ -9,6 +9,7 @@ Module RunningTotal
         Dim userInput As String
         Dim runningTotal As Decimal
         Const TAXRATE As Decimal = 0.06D
+        Dim taxAmount As Decimal
         Dim badData As Boolean = True
 
         Do
