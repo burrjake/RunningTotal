@@ -33,7 +33,9 @@ Module RunningTotal
                         badData = False
                     Catch ex As Exception
                         'prompt usr to give good data
-                        Console.ReadLine("Please enter a number")
+                        Console.WriteLine()
+                        Console.ReadLine('Please enter a vnumber')
+
                         badData = True
                     End Try
                 ElseIf userInput = "2" Then
