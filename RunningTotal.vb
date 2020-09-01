@@ -11,17 +11,19 @@ Module RunningTotal
         Const TAXRATE As Decimal = 0.06D
         Dim badData As Boolean = True
 
-        Console.WriteLine("Please select an option.")
-        Console.WriteLine("1. Add item")
-        Console.WriteLine("2. Calculate tax")
+        Do
+            Console.Clear()
+            Console.WriteLine("Please select an option.")
+            Console.WriteLine("1. Add item")
+            Console.WriteLine("2. Calculate tax")
 
-        'User Choice
-        userInput = Console.ReadLine()
-
-
-        While userInput <> "q"
+            'User Choice
             userInput = Console.ReadLine()
-            Do
+
+
+            While userInput <> "q"
+                userInput = Console.ReadLine()
+
                 If userInput = "1" Then
 
 
@@ -46,7 +48,7 @@ Module RunningTotal
             Loop While badData
 
 
-            Try
+        Try
                 'runningTotal = runningTotal + CInt(userInput)
                 runningTotal += CInt(userInput)
 
